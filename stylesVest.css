@@ -1,0 +1,258 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Cinzel", serif;
+    font-weight: 600px;
+}
+a:hover,
+a:hover p {
+    color: red;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+p {
+    font-size: 18px;
+}
+.menu ul li {
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+.menu {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.menu img:hover {
+    opacity: 0;
+}
+/* menu */
+.container {
+    width: 1200px;
+    margin: auto;
+}
+/* Slice*/
+.slice {
+    margin-top: 30px;
+    position: relative;
+}
+.slice img {
+    width: 1200px;
+    height: 900px;
+}
+.slice .left {
+    width: 900px;
+    position: absolute;
+    left: 75px;
+    top: 600px;
+}
+.slice .left h2 {
+    font-size: 80px;
+    color: red;
+    cursor: pointer;
+}
+.btn {
+    padding: 15px 55px;
+    background-color: #758dba;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+}
+.btn:hover {
+    background-color: rgb(243, 9, 9);
+}
+.slice .right {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+.hidden {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(253, 253, 253);
+    margin-right: 30px;
+    border: none;
+    font-size: 80px;
+    cursor: pointer;
+}
+.hidden:hover {
+    color: black;
+}
+/* banner */
+.bannerleft {
+    width: 600px;
+    height: 900px;
+    margin-right: 20px;
+    float: left;
+    background-image: url(../inmage/images.jpg);
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+}
+.bannerright {
+    float: left;
+    width: 580px;
+    height: 1000px;
+    background-image: url(../inmage/imagesup.jpg);
+    position: relative;
+    cursor: pointer;
+}
+.textL {
+    position: absolute;
+    left: 370px;
+    bottom: 75px;
+    font-size: 50px;
+}
+.viewL {
+    position: absolute;
+    bottom: 50px;
+    left: 450px;
+}
+.textR {
+    position: absolute;
+    left: 30px;
+    bottom: 900px;
+    font-size: 60px;
+}
+.viewR {
+    position: absolute;
+    bottom: 850px;
+    left: 38px;
+}
+/* conten */
+.title {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.sp img {
+    width: 300px;
+    height: 400px;
+    transform: scale(1.5);
+}
+.sp {
+    margin-bottom: 20px;
+}
+.sp,
+.ten,
+.gia,
+.mua {
+    width: 285px;
+    margin-left: 20px;
+    float: left;
+    overflow: hidden;
+}
+.sp:first-child,
+.ten:first-child,
+.gia:first-child,
+.mua:first-child {
+    margin-left: 0;
+}
+.sp img:hover {
+    transform: scale(1);
+}
+.ten p {
+    color: rebeccapurple;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.gia {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.gia span {
+    font-size: 20px;
+}
+.mua {
+    text-align: center;
+}
+#baner1 {
+    width: 600px;
+    height: 900px;
+    margin-right: 20px;
+    float: left;
+    position: relative;
+    background-image: url(../inmage/imagesright.jpg);
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#baner2 {
+    background-image: url(../inmage/imagesdown.jpg);
+    background-repeat: no-repeat;
+    float: left;
+    width: 580px;
+    height: 900px;
+    position: relative;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.textL2 {
+    position: absolute;
+    left: 330px;
+    bottom: 80px;
+    font-size: 50px;
+    color: black;
+}
+.view2 {
+    position: absolute;
+    bottom: 92px;
+    left: 495px;
+    text-transform: uppercase;
+}
+.textR2 {
+    position: absolute;
+    left: 100px;
+    bottom: 300px;
+    font-size: 50px;
+    color: black;
+}
+.view3 {
+    position: absolute;
+    bottom: 250px;
+    left: 250px;
+    text-transform: uppercase;
+}
+.about #trai {
+    width: 70px;
+    margin-top: 15px;
+    height: 38px;
+    margin-right: 20px;
+    float: left;
+}
+.about {
+    width: 400px;
+    float: left;
+}
+.about #phai {
+    width: 245px;
+    color: red;
+    float: left;
+}
+.contact {
+    width: 300px;
+    float: left;
+}
+.contact p {
+    margin-top: 10px;
+    color: red;
+}
+.contact span {
+    font-size: 22px;
+    font-weight: bold;
+}
+.footer {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    margin-top: 100px;
+}
+#title {
+    font-size: 30px;
+}
