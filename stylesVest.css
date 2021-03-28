@@ -2,7 +2,8 @@
     margin: 0px;
     padding: 0px;
     font-family: "Cinzel", serif;
-    font-weight: 600px;
+    font-weight: 300px;
+    font-size: 20px;
 }
 a:hover,
 a:hover p {
@@ -236,6 +237,16 @@ p {
     color: red;
     float: left;
 }
+.link {
+    width: 200px;
+    float: left;
+}
+.link #link {
+    padding: 80px;
+    width: 400px;
+    color: red;
+    float: left;
+}
 .contact {
     width: 300px;
     float: left;
@@ -250,9 +261,429 @@ p {
 }
 .footer {
     cursor: pointer;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(27, 23, 23);
     margin-top: 100px;
 }
 #title {
     font-size: 30px;
+}
+html {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    min-height: 100vh;
+}
+
+#Wrapper {
+    align-items: center;
+
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    width: 1000px;
+}
+
+#Slideshow {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#Slider {
+    height: 300px;
+    overflow: hidden;
+    width: 600px;
+}
+
+#Slider img {
+    height: 300px;
+    width: 600px;
+    transition: all 1s;
+}
+
+#Arrows {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    position: absolute;
+    width: 600px;
+}
+
+#Arrows i {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #1c1d21;
+    cursor: pointer;
+    height: 30px;
+    padding: 15px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#Arrows i:first-of-type {
+    padding-right: 20px;
+}
+
+#Arrows i:last-of-type {
+    padding-left: 20px;
+}
+
+#Arrows i:hover {
+    background-color: rgba(28, 29, 33, 0.75);
+    color: #eeeff7;
+}
+
+h1 {
+    color: #1c1d21;
+    font-family: righteous;
+    font-size: 2.5em;
+    padding: 20px;
+}
+
+h2 {
+    color: #1c1d21;
+    font-family: "Open Sans";
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+/* jssss */
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1#main_title {
+    text-align: center;
+}
+
+.sliders {
+    display: block;
+    width: 100%;
+}
+img {
+    vertical-align: middle;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    background-color: #ffffff5e;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover,
+.am-slider-prev:hover,
+.am-slider-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+element.style {
+    display: block;
+}
+/* .mySlides fade img {
+    height:  600px;
+} */
+/* Slideshow container */
+
+/* .slideshow-container {
+    max-width: 1200px;
+} */
+.slideshow-container {
+    max-width: 100%;
+
+    height: 900px;
+    position: relative;
+    margin: auto;
+}
+.slideshow-container img {
+    width: 1400px;
+    height: 600px;
+    object-fit: cover;
+}
+.header-slider-img {
+    height: 900px;
+    background-position: center;
+    background-image: url(../inmage/vest.jpg);
+    background-size: cover;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* .mySlides fade img {
+    height:  600px;
+} */
+/* Slideshow container */
+.slideshow-container {
+    /* max-width: 1000px; */
+    height: 900px;
+    position: relative;
+    margin: auto;
+}
+.slideshow-container img {
+    width: 1400px;
+    height: 600px;
+    object-fit: cover;
+}
+.header-slider-img {
+    max-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.w3-display-topright,
+.img {
+    float: left;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.container-4 {
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.container-4 input#search {
+    width: 300px;
+    height: 50px;
+    background: #e6e9f0;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: rgb(0, 0, 0);
+    padding-left: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.container-4 input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+
+.container-4 input#search:-moz-placeholder {
+    /* Firefox 18- */
+    color: #65737e;
+}
+
+.container-4 input#search::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #a1ccec;
+}
+
+.container-4 input#search:-ms-input-placeholder {
+    color: #c5daeb;
+}
+.container-4 button.icon {
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    border: none;
+    height: 50px;
+    width: 50px;
+    color: #f5faff;
+    opacity: 0;
+    font-size: 10pt;
+
+    -webkit-transition: all 0.55s ease;
+    -moz-transition: all 0.55s ease;
+    -ms-transition: all 0.55s ease;
+    -o-transition: all 0.55s ease;
+    transition: all 0.55s ease;
+}
+.container-4:hover button.icon,
+.container-4:active button.icon,
+.container-4:focus button.icon {
+    outline: none;
+    opacity: 1;
+    margin-left: -50px;
+}
+
+.container-4:hover button.icon:hover {
+    cursor: pointer;
+}
+/* dropdown */
+/* .dropbtn {
+    background-color: #305969;
+    color: rgb(255, 255, 255);
+    padding: 13px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+} */
+
+element.style {
+    height: 177px;
+}
+.dropbtn {
+    background-color: #305969;
+    color: rgb(255, 255, 255);
+    padding: 1px 2px 11px 0px;
+    font-size: 27px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.zoom {
+    transition: transform 0.2s;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+}
+.box {
+    background-color: rgb(0, 0, 0);
+}
+.dropdown:hover .dropbtn {
+    background-color: rgb(0, 0, 0);
+}
+
+.menu_top li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #787583;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(204, 240, 207, 0.2);
+    z-index: 1;
+    line-height: 20px;
+}
+.dropdown-content a p {
+    color: rgb(0, 0, 0);
+}
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border: 1px solid rgb(212, 203, 203);
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
