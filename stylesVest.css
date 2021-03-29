@@ -9,6 +9,8 @@ a:hover,
 a:hover p {
     color: red;
 }
+.input {
+}
 a {
     text-decoration: none;
     color: black;
