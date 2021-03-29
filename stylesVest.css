@@ -9,8 +9,7 @@ a:hover,
 a:hover p {
     color: red;
 }
-.input {
-}
+
 a {
     text-decoration: none;
     color: black;
@@ -135,7 +134,7 @@ p {
 .sp img {
     width: 300px;
     height: 400px;
-    transform: scale(1.5);
+    transform: scale(0.8);
 }
 .sp {
     margin-bottom: 20px;
@@ -689,3 +688,32 @@ element.style {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+/* .back-to-top {
+    width: 7rem;
+    height: 7rem;
+    background-color: #121212;
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+.back-to-top i {
+    display: block;
+    color: rgb(240, 3, 3);
+    font-size: 2rem;
+    padding: 2rem;
+    animation: up 2s infinite;
+}
+@keyframes up {
+    0% {
+        transform: translateY(1rem);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-1 rem);
+        opacity: 0;
+    }
+} */
